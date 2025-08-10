@@ -36,7 +36,7 @@ int comparacaoPopulacao, comparacaoArea, comparacaoPib, comparacaoNpt, comparaca
     printf("Digete o número de pontos turísticos da Cidade: \n");
     scanf("%d", &npt1);
 
-    dp1 = populacao1 / area1;
+    dp1 = (float)populacao1 / area1;
 
     pibper1 = (pib1 * 1000000000.0f) / populacao1;
 
@@ -82,7 +82,7 @@ int comparacaoPopulacao, comparacaoArea, comparacaoPib, comparacaoNpt, comparaca
     printf("Digite o número de pontos turísticos da Cidade: \n");
     scanf("%d", &npt2);
 
-    dp2 = populacao2 / area2;
+    dp2 = (float)populacao2 / area2;
 
     pibper2 = (pib2 * 1000000000.0f) / populacao2;
 
@@ -109,7 +109,7 @@ int comparacaoPopulacao, comparacaoArea, comparacaoPib, comparacaoNpt, comparaca
     comparacaoArea = area1 > area2;
     comparacaoPib = pib1 > pib2;
     comparacaoNpt = npt1 > npt2;
-    comparacaoDP = dp1 > dp2;
+    comparacaoDP = dp1 < dp2;
     comparacaoPibper = pibper1 > pibper2;
     comparacaoSuperpoder = superpoder1 > superpoder2;
 
